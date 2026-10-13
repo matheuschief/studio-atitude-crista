@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /obrigado.html
+Disallow: /404.html
+Sitemap: https://studio-atitude-crista.playerfortnitemm.chatgpt.site/sitemap.xml
