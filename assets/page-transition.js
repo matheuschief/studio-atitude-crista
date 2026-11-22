@@ -13,7 +13,7 @@ document.addEventListener('click',event=>{
  const box=document.createElement('div');box.style.cssText='max-width:700px;padding:35px;text-align:center';
  const logo=document.createElement('img');logo.src='/assets/logo-atitude-crista-transparente.png';logo.alt='';logo.width=105;logo.height=105;logo.style.cssText='object-fit:contain;margin-bottom:24px';
  const caption=document.createElement('p');caption.style.cssText='font:italic clamp(26px,5vw,42px)/1.25 Georgia;margin:0;color:#f8f3f7';
- caption.textContent=url.pathname.startsWith('/parceiros')?'Juntos, escrevemos o próximo capítulo.':url.pathname.startsWith('/loja')?'Um novo espaço está chegando.':url.pathname.startsWith('/espaco-de-beleza')?'Um momento para cuidar de você.':'Técnica, arte e fé.';
+ caption.textContent=url.pathname.startsWith('/parceiros')?'Juntos, escrevemos o próximo capítulo.':url.pathname.startsWith('/loja')?'Fé, estilo e presentes com significado.':url.pathname.startsWith('/espaco-de-beleza')?'Um momento para cuidar de você.':'Técnica, arte e fé.';
  const line=document.createElement('div');line.style.cssText='height:1px;width:90px;margin:28px auto 0;background:#e8c3ce;transform:scaleX(0);transform-origin:left;transition:transform 1100ms cubic-bezier(.2,.65,.3,1)';
  box.append(logo,caption,line);layer.append(box);document.body.append(layer);
  requestAnimationFrame(()=>requestAnimationFrame(()=>{layer.style.opacity='1';line.style.transform='scaleX(1)'}));
